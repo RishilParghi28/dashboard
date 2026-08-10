@@ -1,0 +1,85 @@
+/* =========================
+   Superstore Dash — Dark UI Inputs
+   assets/style.css
+   ========================= */
+
+/* ---------- Dropdown: base look (white box) ---------- */
+.dark-input .Select-control {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(148,163,184,0.35) !important;
+  border-radius: 10px !important;
+  min-height: 38px !important;
+  box-shadow: none !important;
+}
+
+/* Arrow zone + arrow */
+.dark-input .Select-arrow-zone { color: #111827 !important; }
+.dark-input .Select-arrow {
+  border-color: #111827 transparent transparent !important;
+}
+
+/* Dropdown menu box */
+.dark-input .Select-menu-outer {
+  background: #ffffff !important;
+  border: 1px solid rgba(148,163,184,0.35) !important;
+}
+
+/* Dropdown option text */
+.dark-input .VirtualizedSelectOption { color: #111827 !important; }
+.dark-input .VirtualizedSelectFocusedOption {
+  background: rgba(168,85,247,0.18) !important;
+  color: #111827 !important;
+}
+
+/* ---------- Dropdown: FORCE text visibility (placeholder + selected) ---------- */
+.dark-input .Select-placeholder,
+.dark-input .Select-control .Select-placeholder,
+.dark-input .Select-value,
+.dark-input .Select-value-label,
+.dark-input .Select-control .Select-value-label,
+.dark-input .Select--single > .Select-control .Select-value,
+.dark-input .Select--single > .Select-control .Select-value .Select-value-label,
+.dark-input .Select-input input,
+.dark-input .Select-input > input {
+  color: #111827 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Extra safeguard if any theme applies rgba/opacity */
+.dark-input .Select-placeholder {
+  color: rgb(17,24,39) !important;
+}
+
+/* ---------- DatePicker: readable input ---------- */
+.dark-date input {
+  color: #111827 !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(148,163,184,0.35) !important;
+  border-radius: 10px !important;
+  padding: 8px 10px !important;
+  box-shadow: none !important;
+}
+
+/* DatePicker separators/icons */
+.DateRangePickerInput_arrow,
+.DateInput_fang {
+  color: #111827 !important;
+}
+
+/* FINAL FIX: Dash dims placeholder via opacity — force full opacity everywhere */
+.dark-input .Select-placeholder,
+.dark-input .Select-control .Select-placeholder,
+.dark-input .Select-value-label,
+.dark-input .Select-control .Select-value-label,
+.dark-input .Select-value,
+.dark-input .Select-control .Select-value {
+  opacity: 1 !important;
+  color: #111827 !important;
+}
+
+/* Some versions put placeholder inside this */
+.dark-input .has-value .Select-placeholder {
+  opacity: 1 !important;
+  color: #111827 !important;
+}
